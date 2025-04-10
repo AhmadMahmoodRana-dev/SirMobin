@@ -44,7 +44,7 @@ const serviceData = [
 const ServiceCard = ({ service, index }) => {
   return (
     <motion.div
-      className="bg-[#282828] border border-[#414141] h-[450px] p-8 rounded-lg transition-transform duration-300 hover:transform hover:-translate-y-2 justify-center items-center flex flex-col"
+      className="bg-[#282828]  border border-[#414141] h-[450px] p-8 rounded-lg transition-transform duration-300 hover:transform hover:-translate-y-2 justify-center items-center flex flex-col"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -67,7 +67,7 @@ const ServiceCard = ({ service, index }) => {
 
 const Services = () => {
   return (
-    <section className="2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-20 bg-[#1c1c1c]">
+    <section className="2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-20 bg-[#1c1c1c] bg-gradient-to-br from-[#1c1c1c] to-[#423814]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-white text-4xl md:text-5xl font-bold mb-6">Popular Services</h2>

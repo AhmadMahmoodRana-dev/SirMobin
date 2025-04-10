@@ -25,7 +25,7 @@ const AdvantageSection = () => {
     }),
   };
   return (
-    <div className="bg-[#1c1c1c] text-white py-12 md:py-20 sm:px-6 xl:px-20 lg:px-10 md:px-6 pl-8 pr-6">
+    <div className="bg-[#1c1c1c] bg-gradient-to-br from-[#292717] to-[#1c1c1c] text-white py-12 md:py-20 sm:px-6 xl:px-20 lg:px-10 md:px-6 pl-8 pr-6">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
         {/* Experience Box */}
         <motion.div

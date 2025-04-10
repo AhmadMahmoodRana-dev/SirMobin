@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,32 +24,50 @@ const Header = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex space-x-8">
             <li>
-              <Link to="/" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/about"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 About us
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/services"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 Service
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/portfolio"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/blog"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-white hover:text-green-400 transition-colors">
+              <Link
+                to="/contact"
+                className="text-white hover:text-green-400 transition-colors"
+              >
                 Contact
               </Link>
             </li>
@@ -59,9 +78,10 @@ const Header = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition duration-300"
+            className="bg-green-500 flex justify-center items-center gap-3 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
           >
             Contact
+              <FaArrowRightLong />
           </Link>
         </div>
 
