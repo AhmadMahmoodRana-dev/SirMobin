@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-20 pb-8">
+    <footer className="bg-[#1c1c1c] bg-gradient-to-br 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 text-white pt-20 pb-8">
       <div className="container mx-auto px-4">
         {/* CTA Section */}
         <div className="bg-red-500 p-10 rounded-lg mb-16 flex flex-col md:flex-row justify-between items-center">
@@ -25,10 +26,9 @@ const Footer = () => {
         {/* Footer Links */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and About */}
-          <div>
+          <div className='border-r'>
             <Link to="/" className="flex items-center mb-6">
-              <img src="/images/logo.png" alt="Elito Logo" className="h-12 w-12" />
-              <span className="text-white text-3xl font-bold ml-2">Elito.</span>
+              <img src={logo} alt="Elito Logo" className="h-12 w-28" />
             </Link>
             <p className="text-gray-400 mb-6">
               Welcome and open yourself to your truest love this year with us! With the Release Process
