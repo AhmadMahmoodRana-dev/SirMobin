@@ -20,31 +20,31 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Content - Animates from Bottom */}
           <motion.div
-            className="w-full md:w-1/2 mb-8 md:mb-0"
+            className="w-full md:w-1/2 mb-8 md:mb-0 sm:text-left text-center"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             <motion.h3
-              className="text-yellow-400 text-xl md:text-5xl font-semibold mb-4"
+              className="text-yellow-400 text-4xl md:text-5xl font-semibold mb-4"
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               Hello,
             </motion.h3>
             <motion.h1
-              className="text-white text-4xl md:text-8xl font-bold mb-4"
+              className="text-white text-5xl md:text-8xl font-bold mb-4"
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               I am Ronald.
             </motion.h1>
             <motion.h2
-              className="text-green-500 text-xl md:text-3xl font-semibold mb-6"
+              className="text-green-500 text-3xl md:text-3xl font-semibold mb-6"
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               UI/UX Designer
             </motion.h2>
             <motion.p
-              className="text-gray-300 mb-8 max-w-md lg:max-w-lg md:text-lg"
+              className="text-gray-300 mb-8 max-w-md lg:max-w-lg text-lg "
               transition={{ duration: 0.5, delay: 0.7 }}
             >
               Must explain to how all this mistaken idea denouncing pleasure pain
@@ -69,7 +69,7 @@ const Hero = () => {
           >
             <div className="relative">
               {/* Profile Image */}
-              <div className="mx-auto relative z-10">
+              <div className="mx-auto relative z-10 flex justify-center">
                 <div className="rounded-full bg-blue-400 overflow-hidden h-64 w-64 lg:h-[80%] lg:w-[80%] relative">
                   <img
                     src={profile}
@@ -80,10 +80,10 @@ const Hero = () => {
               </div>
 
               {/* Software Icons */}
-              <div className="absolute -top-5 right-8 lg:right-40 z-20 bg-white p-2 rounded-md shadow-md">
+              <div className="absolute -top-2 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
                 <img src={photoshop} alt="Photoshop Icon" className="w-12 h-12" />
               </div>
-              <div className="absolute top-12 right-2 lg:right-24 z-20 bg-white p-2 rounded-md shadow-md">
+              <div className="absolute bottom-12 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
                 <img src={sketch} alt="Sketch Icon" className="w-12 h-12" />
               </div>
 
