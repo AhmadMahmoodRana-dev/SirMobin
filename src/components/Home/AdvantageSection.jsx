@@ -30,7 +30,11 @@ const AdvantageSection = () => {
     { label: "Figma", value: 98, color: "text-yellow-400 border-pink-600" },
     { label: "Sketch", value: 92, color: "text-green-400 border-green-600" },
     { label: "Photoshop", value: 88, color: "text-red-400 border-red-600" },
-    { label: "Illustrator", value: 77, color: "text-orange-400 border-orange-500" },
+    {
+      label: "Illustrator",
+      value: 77,
+      color: "text-orange-400 border-orange-500",
+    },
     { label: "WordPress", value: 43, color: "text-blue-400 border-blue-500" },
     { label: "ReactJS", value: 37, color: "text-yellow-400 border-purple-500" },
   ];
@@ -63,7 +67,6 @@ const AdvantageSection = () => {
   return (
     <div className="bg-[#1c1c1c] bg-gradient-to-br from-[#292717] to-[#1c1c1c] text-white py-12 md:py-20 sm:px-6 xl:px-20 lg:px-10 md:px-6 pl-8 pr-6">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
-
         {/* Experience Box */}
         <motion.div
           ref={experienceRef}
@@ -107,12 +110,15 @@ const AdvantageSection = () => {
           className="w-full xl:w-[45%] lg:w-[50%] md:w-[60%]"
         >
           <h2 className="text-3xl xs:text-4xl md:text-6xl font-bold mb-6 md:mb-8 md:text-left text-center">
-            My Advantage
+            What I Bring to the Table
           </h2>
           <p className="text-gray-300 mb-6 md:mb-8 w-full md:w-[90%] text-base md:text-[1.1rem] md:text-left text-center leading-relaxed">
-            Must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account the system and expound the actual.
+            With extensive experience in IT solutions, data architecture,
+            process mapping, and ERP implementation, I specialize in aligning
+            technology with strategic business goals. I deliver practical,
+            results-driven solutions backed by deep expertise across a range of
+            technologies. I’ve led digital transformations that boost
+            efficiency, scalability, and long-term growth.
           </p>
 
           {/* Skill Grid */}

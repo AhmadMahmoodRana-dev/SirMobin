@@ -47,8 +47,9 @@ const Hero = () => {
               className="text-gray-300 mb-8 max-w-md lg:max-w-lg text-lg "
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Must explain to how all this mistaken idea denouncing pleasure pain
-              the system and expound the actua.
+              I help bridge the gap between business goals and technology by
+              challenging outdated beliefs and delivering effective
+              digital solutions
             </motion.p>
             <motion.div transition={{ duration: 0.5, delay: 0.9 }}>
               <Link
@@ -81,7 +82,11 @@ const Hero = () => {
 
               {/* Software Icons */}
               <div className="absolute -top-2 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
-                <img src={photoshop} alt="Photoshop Icon" className="w-12 h-12" />
+                <img
+                  src={photoshop}
+                  alt="Photoshop Icon"
+                  className="w-12 h-12"
+                />
               </div>
               <div className="absolute bottom-12 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
                 <img src={sketch} alt="Sketch Icon" className="w-12 h-12" />
@@ -91,7 +96,9 @@ const Hero = () => {
               <div className="absolute bottom-0 left-4 lg:left-20 z-20 bg-white px-4 py-2 rounded-md shadow-md">
                 <div className="flex items-center">
                   <span className="font-bold text-gray-900">100+</span>
-                  <span className="ml-2 text-sm text-gray-600">Complete Projects</span>
+                  <span className="ml-2 text-sm text-gray-600">
+                    Complete Projects
+                  </span>
                 </div>
               </div>
             </div>
