@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className='lg:border-r'>
             <Link to="/" className="flex items-center mb-6">
-              <img src={logo} alt="Elito Logo" className="h-12 w-28" />
+              <img src={logo} alt="Elito Logo" className="h-14 w-40" />
             </Link>
             <p className="text-gray-400 mb-6">
               Welcome and open yourself to your truest love this year with us! With the Release Process
