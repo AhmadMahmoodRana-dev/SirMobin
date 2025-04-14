@@ -47,7 +47,7 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-800 relative">
+    <section className="py-20 bg-[#2c2c2c] relative">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay"
         style={{ backgroundImage: "url('/images/main-bg.jpg')" }}

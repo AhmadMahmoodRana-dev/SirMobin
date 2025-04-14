@@ -7,7 +7,7 @@ const experiences = [
     title: "Junior Visual Designer",
     company: "Trapeza Group, USA",
     link: "#",
-    icon: "🌀", // You can replace with an image/icon if needed
+    icon: "🌀",
   },
   {
     year: "2017 - 2018",
@@ -60,9 +60,13 @@ const ExperienceSection = () => {
 
       <div className="space-y-4 md:space-y-6">
         {experiences.map((exp, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-[#1e1e1e] md:flex items-center justify-between p-4 md:p-6 rounded-lg shadow-md space-y-4 md:space-y-0"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             <div className="md:w-1/4 w-full text-lg md:text-xl lg:text-2xl font-semibold">
               {exp.year}
@@ -87,7 +91,7 @@ const ExperienceSection = () => {
               <span>Go to website</span>
               <span>→</span>
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
