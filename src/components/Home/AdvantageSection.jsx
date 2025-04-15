@@ -27,16 +27,18 @@ const AdvantageSection = () => {
 
   // Skill data
   const skills = [
-    { label: "Figma", value: 98, color: "text-yellow-400 border-pink-600" },
-    { label: "Sketch", value: 92, color: "text-green-400 border-green-600" },
-    { label: "Photoshop", value: 88, color: "text-red-400 border-red-600" },
+    { label: "Oracle App", value: 98, color: "text-yellow-400 border-pink-600" },
+    { label: "Process Mapping", value: 85, color: "text-green-400 border-green-600" },
+    { label: "Oracle Apex", value: 90, color: "text-red-400 border-red-600" },
     {
-      label: "Illustrator",
-      value: 77,
+      label: "Bussiness Technologies",
+      value: 95,
       color: "text-orange-400 border-orange-500",
     },
-    { label: "WordPress", value: 43, color: "text-blue-400 border-blue-500" },
-    { label: "ReactJS", value: 37, color: "text-yellow-400 border-purple-500" },
+    { label: "Database Technologies", value: 92, color: "text-blue-400 border-blue-500" },
+    { label: "Integration", value: 75, color: "text-yellow-400 border-purple-500" },
+    { label: "Design Architecture", value: 90, color: "text-yellow-400 border-pink-600" },
+    { label: "Front-End Technologies", value: 50, color: "text-blue-400 border-blue-500" },
   ];
 
   // Number counting animation hook
@@ -82,7 +84,7 @@ const AdvantageSection = () => {
               transition={{ delay: 0.2 }}
               className="text-6xl xs:text-7xl md:text-9xl font-bold text-yellow-400"
             >
-              08
+              26
             </motion.h1>
             <p className="text-lg md:text-xl mt-2">Years of Experience</p>
             <motion.div
@@ -132,13 +134,13 @@ const AdvantageSection = () => {
                   initial="hidden"
                   animate={contentInView ? "visible" : "hidden"}
                   custom={index}
-                  className={`border ${skill.color} rounded-xl px-4 py-6 md:px-6 md:py-10 text-center`}
+                  className={`border ${skill.color} rounded-xl px-0 py-6 md:px-0 md:py-10 text-center`}
                 >
                   <h3 className="text-3xl md:text-4xl font-bold text-white">
                     {count}%
                   </h3>
                   <p
-                    className={`text-base md:text-lg font-medium mt-2 ${
+                    className={`text-lg md:text-sm font-medium mt-2 ${
                       skill.color.split(" ")[0]
                     }`}
                   >

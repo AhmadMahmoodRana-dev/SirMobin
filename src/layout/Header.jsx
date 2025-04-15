@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
@@ -6,13 +6,42 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScroll = () => {
+    // When scrolling, hide the navbar
+    if (!isScrolling) {
+      setVisible(false);
+      setIsScrolling(true);
+    }
+
+    // Reset scroll state after a delay
+    clearTimeout(window.scrollTimeout);
+    window.scrollTimeout = setTimeout(() => {
+      setIsScrolling(false);
+      setVisible(true); // Show navbar when scrolling stops
+    }, 100); // Delay to detect when scrolling stops
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isScrolling]);
+
   return (
-    <header className="absolute top-0 left-0 w-full bg-transparent z-50 py-5 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4">
+    <header
+      className={`fixed top-0 left-0 w-full bg-transparent z-50 py-5 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 transition-all duration-300 ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
@@ -81,7 +110,7 @@ const Header = () => {
             className="bg-green-500 flex justify-center items-center gap-3 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
           >
             Contact
-              <FaArrowRightLong />
+            <FaArrowRightLong />
           </Link>
         </div>
 

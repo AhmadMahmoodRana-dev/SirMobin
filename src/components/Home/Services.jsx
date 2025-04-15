@@ -13,45 +13,45 @@ import { motion } from "framer-motion";
 const serviceData = [
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
-    title: "Graphic Design",
+    title: "Customized Application Services",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/graphic-design",
+    link: "services/customise-app",
   },
   {
     icon: <FaDesktop className="text-yellow-400 text-3xl" />,
-    title: "Brand Identity",
+    title: "Application Modernization",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/brand-identity",
+    link: "services/application-modernization",
   },
   {
     icon: <FaMobileAlt className="text-yellow-400 text-3xl" />,
     title: "UI/UX Design",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/ui-ux-design",
+    link: "/services",
   },
   {
     icon: <FaCode className="text-yellow-400 text-3xl" />,
     title: "Web Development",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/web-development",
+    link: "/services",
   },
   {
     icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
     title: "App Development",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/app-development",
+    link: "/services",
   },
   {
     icon: <FaServer className="text-yellow-400 text-3xl" />,
     title: "Software Development",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services/software-development",
+    link: "/services",
   },
 ];
 
