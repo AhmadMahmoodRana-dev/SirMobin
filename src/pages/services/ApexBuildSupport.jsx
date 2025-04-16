@@ -1,4 +1,4 @@
-export default function ApplicationModernization() {
+export default function ApexBuildSupport() {
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -68,13 +68,13 @@ export default function ApplicationModernization() {
         {/* Title & Content */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-          Application Modernization
+            APEX Build & Support
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            We modernize legacy applications to align with current technologies
-            and business needs. By upgrading and enhancing, we ensure longevity
-            and improved performance. This results in cost-effective, scalable
-            systems that continue to meet your business requirements.
+            Using Oracle APEX, we develop and support powerful data-driven apps.
+            Our services include legacy migration, analytics dashboards, and
+            seamless third-party integrations. Maximize ROI with scalable APEX
+            solutions.
           </p>
         </section>
 
@@ -97,9 +97,9 @@ export default function ApplicationModernization() {
             What We Offer:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Legacy system upgrades</li>
+            <li>Full Oracle APEX lifecycle support</li>
             <li>Cloud migration</li>
-            <li>Feature enhancements</li>
+            <li>Security and compliance</li>
           </ul>
         </div>
 
@@ -110,9 +110,9 @@ export default function ApplicationModernization() {
             Key Benefits:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Reduced operational costs</li>
-            <li>Improved system performance</li>
-            <li>Future-ready software</li>
+            <li>Low-code efficiency</li>
+            <li>Secure data environments</li>
+            <li>Continuous improvement</li>
           </ul>
         </div>
         {/*Work Process*/}
@@ -122,10 +122,10 @@ export default function ApplicationModernization() {
             Work Process:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Audit & Assessment</li>
-            <li>Modernization Planning</li>
-            <li>Development & Refactoring</li>
+            <li>Planning & Prototyping</li>
+            <li>Development & Customization</li>
             <li>Testing & Deployment</li>
+            <li>Support & Training</li>
           </ul>
         </div>
       </main>

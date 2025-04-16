@@ -1,36 +1,4 @@
-export default function CustomisedApplicationService() {
-  const workProcess = [
-    {
-      id: 1,
-      title: "Discovery & Requirement Analysis",
-      description:
-        "We gather your ideas, goals, and pain points to define the scope.",
-    },
-    {
-      id: 2,
-      title: "Design & Prototyping",
-      description:
-        "Our designers create interactive mockups and prototypes based on UX/UI best practices.",
-    },
-    {
-      id: 3,
-      title: "Development & Testing",
-      description:
-        "Agile development cycles with continuous testing to ensure functionality and performance.",
-    },
-    {
-      id: 4,
-      title: "Deployment & Integration",
-      description:
-        "Final launch along with integration into your ecosystem (e.g., CRM, ERP, APIs).",
-    },
-    {
-      id: 5,
-      title: "Post-Launch Support",
-      description: "Maintenance, upgrades, and ongoing optimization.",
-    },
-  ];
-
+export default function CustomisedAppDevelopment() {
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -100,16 +68,15 @@ export default function CustomisedApplicationService() {
         {/* Title & Content */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-            Customized Apps Development{" "}
+            Customized App Development
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            At ZoiSol, we understand that off-the-shelf software can’t always
-            meet the unique demands of your business. That’s why we offer
-            Customized Application Development services designed specifically
-            for your workflows, goals, and industry. From idea to execution, we
-            work closely with you to develop mobile, web, or enterprise
-            applications that empower your business and deliver exceptional user
-            experiences.
+            We specialize in developing custom applications tailored to your
+            business needs. From ideation to deployment, we create apps that
+            drive efficiency and deliver seamless user experiences. Our team
+            ensures every application is built with performance, scalability,and
+            future growth in mind, ensuring you remain competitive in the
+            digital world.
           </p>
         </section>
 
@@ -132,10 +99,9 @@ export default function CustomisedApplicationService() {
             What We Offer:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Tailor-made software built from the ground up</li>
-            <li>End-to-end app development: UI/UX, backend, deployment</li>
-            <li>Mobile apps, web platforms, and enterprise-level solutions</li>
-            <li>Ongoing support and scalable architecture for future growth</li>
+            <li>Tailored mobile, web, and enterprise applications</li>
+            <li>Technology consultation and architecture planning</li>
+            <li>End-to-end design and development</li>
           </ul>
         </div>
 
@@ -152,54 +118,22 @@ export default function CustomisedApplicationService() {
             <li>Scalable solutions aligned with your growth strategy</li>
           </ul>
         </div>
+        {/*Work Process*/}
 
-        {/* Work Process */}
-        <section className="space-y-6">
-          <h3 className="text-3xl font-bold">Our Work Process</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {workProcess.map((val, index) => {
-              return (
-                <div
-                  key={index}
-                  className="p-6 bg-gray-800 rounded-xl text-center shadow-md hover:shadow-xl transition-shadow"
-                >
-                  <div className="w-16 h-16 bg-green-400/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-green-400">
-                      {index + 1}
-                    </span>
-                  </div>
-                  <h4 className="text-xl font-semibold">{val.title}</h4>
-                  <p className="text-gray-400 mt-2 text-sm">
-                    {val.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+        <div className="bg-[#1e2939] rounded-xl p-6 shadow-sm">
+          <h2 className="text-2xl font-semibold text-white mb-4">
+            Work Process:
+          </h2>
+          <ul className="space-y-2 list-disc list-inside text-gray-400">
+            <li>Requirement Analysis</li>
+            <li>UI/UX Design</li>
+            <li>Agile Development</li>
+            <li>Testing & QA</li>
+            <li>Deployment & Maintenance</li>
+          </ul>
+        </div>
 
-        {/* Related Services */}
-        <section className="space-y-6">
-          <h3 className="text-3xl font-bold">Related Services</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {[...Array(3)].map((_, i) => (
-              <div
-                key={i}
-                className="bg-gray-800 p-6 rounded-xl hover:-translate-y-2 transition-transform shadow-md hover:shadow-xl"
-              >
-                <div className="h-48 w-full bg-gray-700 rounded-lg mb-4"></div>
-                <h4 className="text-xl font-semibold mb-2">Graphic Design</h4>
-                <p className="text-gray-400">
-                  Professional visual solutions that elevate your brand
-                  identity.
-                </p>
-                <button className="mt-4 text-green-400 hover:text-green-300 font-semibold transition-colors">
-                  Learn More →
-                </button>
-              </div>
-            ))}
-          </div>
-        </section>
+      
       </main>
     </div>
   );

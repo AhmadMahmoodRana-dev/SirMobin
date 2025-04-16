@@ -1,4 +1,4 @@
-export default function ApplicationModernization() {
+export default function OracleOTBIReporting() {
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -68,13 +68,14 @@ export default function ApplicationModernization() {
         {/* Title & Content */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-          Application Modernization
+            Oracle OTBI Reporting
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            We modernize legacy applications to align with current technologies
-            and business needs. By upgrading and enhancing, we ensure longevity
-            and improved performance. This results in cost-effective, scalable
-            systems that continue to meet your business requirements.
+            We build and optimize Oracle OTBI reports and dashboards to give you
+            actionable insights from your transactional data. Our solutions
+            simplify data interpretation for all user levels. Unlock the full
+            potential of your Oracle data with real-time reports that help you
+            stay agile and informed.
           </p>
         </section>
 
@@ -97,9 +98,9 @@ export default function ApplicationModernization() {
             What We Offer:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Legacy system upgrades</li>
-            <li>Cloud migration</li>
-            <li>Feature enhancements</li>
+            <li>Custom OTBI report creation</li>
+            <li>Fusion dashboard development</li>
+            <li>Data visualization and insights</li>
           </ul>
         </div>
 
@@ -110,9 +111,9 @@ export default function ApplicationModernization() {
             Key Benefits:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Reduced operational costs</li>
-            <li>Improved system performance</li>
-            <li>Future-ready software</li>
+            <li>Real-time analytics</li>
+            <li>Decision-making support</li>
+            <li>Seamless Fusion integration</li>
           </ul>
         </div>
         {/*Work Process*/}
@@ -122,10 +123,10 @@ export default function ApplicationModernization() {
             Work Process:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Audit & Assessment</li>
-            <li>Modernization Planning</li>
-            <li>Development & Refactoring</li>
-            <li>Testing & Deployment</li>
+            <li>Skills Assessment</li>
+            <li>Curriculum Development</li>
+            <li>Live Sessions</li>
+            <li>Post-Training Support</li>
           </ul>
         </div>
       </main>

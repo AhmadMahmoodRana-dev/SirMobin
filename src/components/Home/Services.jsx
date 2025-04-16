@@ -23,7 +23,7 @@ const serviceData = [
     title: "Application Modernization",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/application-modernization",
+    link: "services/enterprise-development",
   },
   {
     icon: <FaMobileAlt className="text-yellow-400 text-3xl" />,

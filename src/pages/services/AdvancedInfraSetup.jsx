@@ -1,4 +1,4 @@
-export default function ApplicationModernization() {
+export default function AdvancedInfraSetup() {
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -68,13 +68,13 @@ export default function ApplicationModernization() {
         {/* Title & Content */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-          Application Modernization
+            Advanced Infra Setup
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            We modernize legacy applications to align with current technologies
-            and business needs. By upgrading and enhancing, we ensure longevity
-            and improved performance. This results in cost-effective, scalable
-            systems that continue to meet your business requirements.
+            We help provincial and national organizations manage IT
+            infrastructure efficiently. From multi-device networks to secure
+            cloud systems, our services are tailored for complexity. Your IT
+            backbone, redefined.
           </p>
         </section>
 
@@ -97,9 +97,9 @@ export default function ApplicationModernization() {
             What We Offer:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Legacy system upgrades</li>
-            <li>Cloud migration</li>
-            <li>Feature enhancements</li>
+            <li>MDMA, CLOUD++, CLDHYP services</li>
+            <li>Device and cloud management</li>
+            <li>Hypervisor services for enterprise</li>
           </ul>
         </div>
 
@@ -110,9 +110,9 @@ export default function ApplicationModernization() {
             Key Benefits:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Reduced operational costs</li>
-            <li>Improved system performance</li>
-            <li>Future-ready software</li>
+            <li>Enhanced security</li>
+            <li>Centralized control</li>
+            <li>Scalable infrastructure</li>
           </ul>
         </div>
         {/*Work Process*/}
@@ -122,10 +122,10 @@ export default function ApplicationModernization() {
             Work Process:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Audit & Assessment</li>
-            <li>Modernization Planning</li>
-            <li>Development & Refactoring</li>
-            <li>Testing & Deployment</li>
+            <li>Infra Assessment</li>
+            <li>Architecture Design</li>
+            <li>Implementation</li>
+            <li>Monitoring & Scaling</li>
           </ul>
         </div>
       </main>

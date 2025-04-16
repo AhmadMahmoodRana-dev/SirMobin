@@ -1,4 +1,4 @@
-export default function ApplicationModernization() {
+export default function PostDevelopmentSupport() {
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -68,13 +68,13 @@ export default function ApplicationModernization() {
         {/* Title & Content */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-          Application Modernization
+            Mobile Application Development
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            We modernize legacy applications to align with current technologies
-            and business needs. By upgrading and enhancing, we ensure longevity
-            and improved performance. This results in cost-effective, scalable
-            systems that continue to meet your business requirements.
+            We create mobile apps that help businesses engage customers and
+            streamline operations. Whether native or hybrid, we ensure apps are
+            fast, secure, and scalable. You’ll get a custom app that reflects
+            your brand and delivers value across devices.
           </p>
         </section>
 
@@ -97,9 +97,9 @@ export default function ApplicationModernization() {
             What We Offer:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Legacy system upgrades</li>
-            <li>Cloud migration</li>
-            <li>Feature enhancements</li>
+            <li>Native iOS and Android apps</li>
+            <li>Cross-platform apps using Flutter, React Native</li>
+            <li>UI/UX for mobile</li>
           </ul>
         </div>
 
@@ -110,9 +110,9 @@ export default function ApplicationModernization() {
             Key Benefits:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Reduced operational costs</li>
-            <li>Improved system performance</li>
-            <li>Future-ready software</li>
+            <li>Broad market reach</li>
+            <li>High-performance user experiences</li>
+            <li>Faster go-to-market</li>
           </ul>
         </div>
         {/*Work Process*/}
@@ -122,10 +122,10 @@ export default function ApplicationModernization() {
             Work Process:
           </h2>
           <ul className="space-y-2 list-disc list-inside text-gray-400">
-            <li>Audit & Assessment</li>
-            <li>Modernization Planning</li>
-            <li>Development & Refactoring</li>
-            <li>Testing & Deployment</li>
+            <li>Mobile Strategy Planning</li>
+            <li>UI/UX Design</li>
+            <li>Development & Device Testing</li>
+            <li>App Store Launch</li>
           </ul>
         </div>
       </main>
