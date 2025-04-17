@@ -1,4 +1,26 @@
 export default function ApexBuildSupport() {
+  const releatedServices = [
+    {
+      "id": 1,
+      title:"Web Development",
+      link:""
+    },
+    {
+      "id": 2,
+      title:"Web Development",
+      link:""
+    },
+    {
+      "id": 3,
+      title:"Web Development",
+      link:""
+    },
+    {
+      "id": 4,
+      title:"Web Development",
+      link:""
+    },
+  ]
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Sidebar */}
@@ -27,22 +49,16 @@ export default function ApexBuildSupport() {
         </div>
 
         <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-          <h3 className="text-xl font-bold mb-4 text-green-400">Services</h3>
+          <h3 className="text-xl font-bold mb-4 text-green-400">Related Services</h3>
           <ul className="space-y-3">
-            {[
-              "Web Development",
-              "App Development",
-              "Software Development",
-              "Social Media Marketing",
-              "Graphic Design",
-              "Brand Identity",
-            ].map((service, i) => (
+            {releatedServices.map((service, i) => (
               <li
+              
                 key={i}
                 className="group flex items-center p-3 rounded-lg hover:bg-gray-700 transition-all cursor-pointer"
               >
-                <span className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all"></span>
-                {service}
+                <a href={service.link} className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all"></a>
+                {service.title}
               </li>
             ))}
           </ul>

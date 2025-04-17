@@ -94,7 +94,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/contactUs"
                 className="text-white hover:text-green-400 transition-colors"
               >
                 Contact
@@ -106,7 +106,7 @@ const Header = () => {
         {/* Contact Button */}
         <div className="hidden md:block">
           <Link
-            to="/contact"
+            to="/contactUs"
             className="bg-green-500 flex justify-center items-center gap-3 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
           >
             Contact
@@ -174,7 +174,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/contactUs"
                 className="text-white hover:text-green-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -183,7 +183,7 @@ const Header = () => {
             </li>
             <li className="mt-4">
               <Link
-                to="/contact"
+                to="/contactUs"
                 className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >

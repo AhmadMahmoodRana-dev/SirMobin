@@ -13,45 +13,45 @@ import { motion } from "framer-motion";
 const serviceData = [
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
-    title: "Customized Application Services",
+    title: "Customized Application",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
     link: "services/customise-app",
   },
   {
     icon: <FaDesktop className="text-yellow-400 text-3xl" />,
-    title: "Application Modernization",
+    title: "Apex Build Support",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/enterprise-development",
+    link: "services/apex-build-support",
   },
   {
     icon: <FaMobileAlt className="text-yellow-400 text-3xl" />,
-    title: "UI/UX Design",
+    title: "Conversion Rate Optimization",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services",
+    link: "services/conversion-rate-optimization",
   },
   {
     icon: <FaCode className="text-yellow-400 text-3xl" />,
-    title: "Web Development",
+    title: "Digital Marketting",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services",
+    link: "services/digital-marketting",
   },
   {
     icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
-    title: "App Development",
+    title: "Oracle Reporting",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services",
+    link: "services/oracle-reporting",
   },
   {
     icon: <FaServer className="text-yellow-400 text-3xl" />,
-    title: "Software Development",
+    title: "Online Reputation Management",
     description:
       "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "/services",
+    link: "services/reputation-management",
   },
 ];
 
@@ -73,12 +73,12 @@ const ServiceCard = ({ service, index }) => {
       <p className="text-[#ededed] mb-6 text-center text-[1.05rem]">
         {service.description}
       </p>
-      <Link
-        to={service.link}
+      <a
+        href={service.link}
         className="text-white hover:text-green-400 inline-flex items-center font-medium gap-5"
       >
         <FaArrowRight /> Learn More
-      </Link>
+      </a>
     </motion.div>
   );
 };
