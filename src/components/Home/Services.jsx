@@ -1,57 +1,58 @@
-import { Link } from "react-router-dom";
 import {
-  FaDesktop,
   FaPaintBrush,
-  FaMobileAlt,
-  FaCode,
   FaLaptopCode,
-  FaServer,
   FaArrowRight,
+  FaBullhorn,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
+import { MdIntegrationInstructions } from "react-icons/md";
+import { BiSolidReport } from "react-icons/bi";
+import { RiUserSettingsFill } from "react-icons/ri";
+
 const serviceData = [
   {
-    icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
-    title: "Customized Application",
+    icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
+    title: "Enterprise Software Development",
     description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/customise-app",
+      "We build robust, scalable, and secure enterprise-level software solutions tailored to streamline your business processes and accelerate growth.",
+    link: "services/enterprise-development",
   },
   {
-    icon: <FaDesktop className="text-yellow-400 text-3xl" />,
-    title: "Apex Build Support",
+    icon: <MdIntegrationInstructions className="text-yellow-400 text-3xl" />,
+    title: "Integration Services",
     description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/apex-build-support",
+      "Seamlessly connect your applications and data systems with our expert integration services to enhance efficiency and ensure smooth operations.",
+    link: "services/integration-service",
   },
   {
-    icon: <FaMobileAlt className="text-yellow-400 text-3xl" />,
-    title: "Conversion Rate Optimization",
+    icon: <FaBullhorn className="text-yellow-400 text-3xl" />,
+    title: "Digital Marketing",
     description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/conversion-rate-optimization",
-  },
-  {
-    icon: <FaCode className="text-yellow-400 text-3xl" />,
-    title: "Digital Marketting",
-    description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
+      "Boost your online presence with our data-driven digital marketing strategies, including SEO, SEM, social media, and content marketing.",
     link: "services/digital-marketting",
   },
   {
-    icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
-    title: "Oracle Reporting",
+    icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
+    title: "Ux/Ui Design",
     description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
+      "Deliver engaging and intuitive user experiences with our modern UI/UX designs that combine creativity, usability, and functionality.",
+    link: "services/ux-ui",
+  },
+  {
+    icon: <BiSolidReport className="text-yellow-400 text-3xl" />,
+    title: "Oracle OTBI Reporting",
+    description:
+      "Gain actionable insights from your Oracle data with our OTBI reporting services, providing custom dashboards and reports for smarter decisions.",
     link: "services/oracle-reporting",
   },
   {
-    icon: <FaServer className="text-yellow-400 text-3xl" />,
-    title: "Online Reputation Management",
+    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    title: "Industry Specific Solutions",
     description:
-      "Explain to you how all this mistaken idea of denouncing pleasure born and give you complete.",
-    link: "services/reputation-management",
+      "We develop tailored software solutions that address unique challenges and requirements of your specific industry to maximize impact and ROI.",
+    link: "services/industry-solution",
   },
 ];
 
