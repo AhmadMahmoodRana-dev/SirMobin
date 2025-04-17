@@ -27,6 +27,16 @@ export default function ApexBuildSupport() {
       title:"Application Modernization",
       link:"application-modernization"
     },
+    {
+      "id": 6,
+      title:"Oracle Solution Hub",
+      link:"oracle-solution"
+    },
+    {
+      "id": 7,
+      title:"Oracle OTBI Reporting",
+      link:"oracle-reporting"
+    }
   ]
   return (
     <div className="flex flex-col lg:flex-row pt-32 bg-gray-900 text-white min-h-screen px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8">
