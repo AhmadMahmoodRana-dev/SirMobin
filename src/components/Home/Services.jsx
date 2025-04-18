@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { MdIntegrationInstructions } from "react-icons/md";
 import { BiSolidReport } from "react-icons/bi";
 import { RiUserSettingsFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const serviceData = [
   {
@@ -74,12 +75,12 @@ const ServiceCard = ({ service, index }) => {
       <p className="text-[#ededed] mb-6 text-center text-[1.05rem]">
         {service.description}
       </p>
-      <a
-        href={service.link}
+      <Link
+        to={service.link}
         className="text-white hover:text-green-400 inline-flex items-center font-medium gap-5"
       >
         <FaArrowRight /> Learn More
-      </a>
+      </Link>
     </motion.div>
   );
 };

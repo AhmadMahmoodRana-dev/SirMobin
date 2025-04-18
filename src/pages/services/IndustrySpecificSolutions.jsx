@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function IndustrySpecificSolutions() {
   const releatedServices = [
     {
@@ -37,15 +39,15 @@ export default function IndustrySpecificSolutions() {
           <h3 className="text-xl font-bold mb-4 text-green-400">Related Services</h3>
           <ul className="space-y-3">
             {releatedServices.map((service, i) => (
-              <a
-              href={service.link}
+              <Link
+      to={`/services/${service.link}`}
               
                 key={i}
                 className="group flex items-center p-3 rounded-lg hover:bg-gray-700 transition-all cursor-pointer"
               >
                 <a  className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all"></a>
                 {service.title}
-              </a>
+              </Link>
             ))}
           </ul>
         </div>
