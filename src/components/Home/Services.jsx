@@ -39,7 +39,7 @@ const serviceData = [
     title: "Ux/Ui Design",
     description:
       "Crafting Engaging and Intuitive Digital Experiences",
-    link: "services/customise-app",
+    link: "services/ux-ui",
   },
   {
     icon: <BiSolidReport className="text-yellow-400 text-3xl" />,

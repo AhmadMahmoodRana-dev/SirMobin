@@ -6,6 +6,7 @@ import CustomsiedAppDevelopment from './pages/services/CustomsiedAppDevelopment'
 import ScrollToHash from './components/Home/ScrollToHash';
 import MobileAppDevelopment from './pages/services/MobileAppDevelopment';
 import WebDevelopment from './pages/services/WebDevelopment';
+import UxUi from './pages/services/UxUi';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='services/customise-app'  element={<CustomsiedAppDevelopment/>} />
           <Route path='services/mobile-app'  element={<MobileAppDevelopment/>} />
           <Route path='services/web-development'  element={<WebDevelopment/>} />
+          <Route path='services/ux-ui'  element={<UxUi/>} />
          
         </Route>
       </Routes>
