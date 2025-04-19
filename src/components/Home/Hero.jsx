@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="relative 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 flex items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+    <section className="relative 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 pb-5 flex items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"

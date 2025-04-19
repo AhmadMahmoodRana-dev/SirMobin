@@ -83,10 +83,10 @@ const ServiceCard = ({ service, index }) => {
       <div className="mb-5 bg-[#414141] p-8 rounded-full hover:bg-green-400 transition-all ease-in-out duration-1000">
         {service.icon}
       </div>
-      <h3 className="text-white text-[1.5vw] font-bold mb-6 text-center">
+      <h3 className="text-white lg:text-[1.5vw] text-2xl font-bold mb-6 text-center">
         {service.title}
       </h3>
-      <p className="text-[#ededed] mb-6 text-center text-[1vw]">
+      <p className="text-[#ededed] mb-6 text-center lg:text-[1vw]">
         {service.description}
       </p>
       <Link
