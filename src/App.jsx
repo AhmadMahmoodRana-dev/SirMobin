@@ -4,6 +4,7 @@ import Layout from './layout/Layout';
 import ContactUs from './pages/ContactUs';
 import CustomsiedAppDevelopment from './pages/services/CustomsiedAppDevelopment';
 import ScrollToHash from './components/Home/ScrollToHash';
+import MobileAppDevelopment from './pages/services/MobileAppDevelopment';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='contactUs'  element={<ContactUs/>} />
           <Route path='services/customise-app'  element={<CustomsiedAppDevelopment/>} />
+          <Route path='services/mobile-app'  element={<MobileAppDevelopment/>} />
          
         </Route>
       </Routes>

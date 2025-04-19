@@ -61,7 +61,7 @@ export default function CustomsiedAppDevelopment() {
           {/* Related Services */}
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-4 text-green-400">
-              Related Services
+              Customized Apps Development{" "}
             </h3>
             <ul className="space-y-3">
               {releatedServices.map((service, i) => (

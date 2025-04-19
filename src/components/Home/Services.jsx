@@ -25,7 +25,7 @@ const serviceData = [
     title: "Mobile Application Development",
     description:
       "Custom Solutions for a Connected World",
-    link: "services/customise-app",
+    link: "services/mobile-app",
   },
   {
     icon: <FaBullhorn className="text-yellow-400 text-3xl" />,
