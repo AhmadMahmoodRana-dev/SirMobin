@@ -32,7 +32,7 @@ const serviceData = [
     title: "Web Development",
     description:
       "Creating Dynamic and Scalable Digital Solutions",
-    link: "services/customise-app",
+    link: "services/web-development",
   },
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
