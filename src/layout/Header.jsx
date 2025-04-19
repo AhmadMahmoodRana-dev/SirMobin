@@ -8,28 +8,31 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [visible, setVisible] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleScroll = () => {
-    // When scrolling, hide the navbar
+    const scrollY = window.scrollY;
+  
+    setIsAtTop(scrollY < 10); 
+  
     if (!isScrolling) {
       setVisible(false);
       setIsScrolling(true);
     }
-
-    // Reset scroll state after a delay
+  
     clearTimeout(window.scrollTimeout);
     window.scrollTimeout = setTimeout(() => {
       setIsScrolling(false);
-      setVisible(true); // Show navbar when scrolling stops
-    }, 100); // Delay to detect when scrolling stops
+      setVisible(true);
+    }, 100);
   };
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll"  , handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -38,9 +41,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-transparent z-50 py-5 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 transition-all duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 py-5 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 transition-all duration-300
+    ${visible ? "translate-y-0" : "-translate-y-full"}
+    ${isAtTop ? "bg-transparent" : "bg-gray-900 bg-opacity-95 backdrop-blur-md"}`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">

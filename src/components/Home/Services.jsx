@@ -15,45 +15,59 @@ import { Link } from "react-router-dom";
 const serviceData = [
   {
     icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
-    title: "Enterprise Software Development",
+    title: "Customized Apps Development",
     description:
-      "We build robust, scalable, and secure enterprise-level software solutions tailored to streamline your business processes and accelerate growth.",
-    link: "services/enterprise-development",
+      "Tailored Solutions for Your Business Needs",
+    link: "services/customise-app",
   },
   {
     icon: <MdIntegrationInstructions className="text-yellow-400 text-3xl" />,
-    title: "Integration Services",
+    title: "Mobile Application Development",
     description:
-      "Seamlessly connect your applications and data systems with our expert integration services to enhance efficiency and ensure smooth operations.",
-    link: "services/integration-service",
+      "Custom Solutions for a Connected World",
+    link: "services/customise-app",
   },
   {
     icon: <FaBullhorn className="text-yellow-400 text-3xl" />,
-    title: "Digital Marketing",
+    title: "Web Development",
     description:
-      "Boost your online presence with our data-driven digital marketing strategies, including SEO, SEM, social media, and content marketing.",
-    link: "services/digital-marketting",
+      "Creating Dynamic and Scalable Digital Solutions",
+    link: "services/customise-app",
   },
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
     title: "Ux/Ui Design",
     description:
-      "Deliver engaging and intuitive user experiences with our modern UI/UX designs that combine creativity, usability, and functionality.",
-    link: "services/ux-ui",
+      "Crafting Engaging and Intuitive Digital Experiences",
+    link: "services/customise-app",
   },
   {
     icon: <BiSolidReport className="text-yellow-400 text-3xl" />,
-    title: "Oracle OTBI Reporting",
+    title: "Oracle Solution Hub",
     description:
-      "Gain actionable insights from your Oracle data with our OTBI reporting services, providing custom dashboards and reports for smarter decisions.",
-    link: "services/oracle-reporting",
+      "Tailored Oracle Services for Your Business",
+    link: "services/customise-app",
   },
   {
     icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
-    title: "Industry Specific Solutions",
+    title: "APEX Build & Support",
     description:
-      "We develop tailored software solutions that address unique challenges and requirements of your specific industry to maximize impact and ROI.",
-    link: "services/industry-solution",
+      "Extensive Oracle APEX Development and Maintenance Services",
+    link: "services/customise-app",
+  },
+  {
+    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    title: "Advanced Infra Setup",
+    description:
+      "Exclusive Services for Provincial & National Organizations",
+    link: "services/customise-app",
+  },
+  {
+    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    title: "Digital Marketing Services",
+    description:
+      "Driving Growth in the Digital Era",
+    link: "services/customise-app",
   },
 ];
 
@@ -69,10 +83,10 @@ const ServiceCard = ({ service, index }) => {
       <div className="mb-5 bg-[#414141] p-8 rounded-full hover:bg-green-400 transition-all ease-in-out duration-1000">
         {service.icon}
       </div>
-      <h3 className="text-white text-3xl font-bold mb-6 text-center">
+      <h3 className="text-white text-[1.5vw] font-bold mb-6 text-center">
         {service.title}
       </h3>
-      <p className="text-[#ededed] mb-6 text-center text-[1.05rem]">
+      <p className="text-[#ededed] mb-6 text-center text-[1vw]">
         {service.description}
       </p>
       <Link
@@ -112,7 +126,7 @@ const Services = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceData.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
           ))}
