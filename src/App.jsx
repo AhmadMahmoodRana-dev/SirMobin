@@ -9,6 +9,7 @@ import WebDevelopment from './pages/services/WebDevelopment';
 import UxUi from './pages/services/UxUi';
 import OracleSolutionHub from './pages/services/OracleSolutionHub';
 import ApexBuildSupport from './pages/services/ApexBuildSupport';
+import AdvancedInfraSetup from './pages/services/AdvancedInfraSetup';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='services/ux-ui'  element={<UxUi/>} />
           <Route path='services/oracle-solution-hub'  element={<OracleSolutionHub/>} />
           <Route path='services/apex-build-support'  element={<ApexBuildSupport/>} />
+          <Route path='services/advanced-infra-setup'  element={<AdvancedInfraSetup/>} />
          
         </Route>
       </Routes>

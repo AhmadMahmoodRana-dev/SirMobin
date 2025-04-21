@@ -60,7 +60,7 @@ const serviceData = [
     title: "Advanced Infra Setup",
     description:
       "Exclusive Services for Provincial & National Organizations",
-    link: "services/customise-app",
+    link: "services/advanced-infra-setup",
   },
   {
     icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
