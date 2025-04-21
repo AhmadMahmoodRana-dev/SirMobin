@@ -46,7 +46,7 @@ const serviceData = [
     title: "Oracle Solution Hub",
     description:
       "Tailored Oracle Services for Your Business",
-    link: "services/customise-app",
+    link: "services/oracle-solution-hub",
   },
   {
     icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,

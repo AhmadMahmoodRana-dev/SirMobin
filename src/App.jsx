@@ -7,6 +7,7 @@ import ScrollToHash from './components/Home/ScrollToHash';
 import MobileAppDevelopment from './pages/services/MobileAppDevelopment';
 import WebDevelopment from './pages/services/WebDevelopment';
 import UxUi from './pages/services/UxUi';
+import OracleSolutionHub from './pages/services/OracleSolutionHub';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='services/mobile-app'  element={<MobileAppDevelopment/>} />
           <Route path='services/web-development'  element={<WebDevelopment/>} />
           <Route path='services/ux-ui'  element={<UxUi/>} />
+          <Route path='services/oracle-solution-hub'  element={<OracleSolutionHub/>} />
          
         </Route>
       </Routes>
