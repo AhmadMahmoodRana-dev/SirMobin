@@ -4,13 +4,33 @@ export default function OracleSolutionHub() {
   const releatedServices = [
     {
       id: 1,
-      title: "User Experience (UX) Design",
-      link: "UX",
+      title: "Custom Oracle APEX Development",
+      link: "custome-oracle",
     },
     {
       id: 2,
-      title: "User Interface (UI) Design",
-      link: "UI",
+      title: "Advanced Oracle Forms Development",
+      link: "advance-oracle",
+    },
+    {
+      id: 3,
+      title: "Analytical Report Design & Development",
+      link: "report-design",
+    },
+    {
+      id: 4,
+      title: "Progressive Web Apps with Oracle Fusion Integration ",
+      link: "progressive-web-app",
+    },
+    {
+      id: 5,
+      title: "Oracle Fusion RESTful API/Web Integration Services",
+      link: "restfull-api",
+    },
+    {
+      id: 6,
+      title: "Oracle Fusion OTBI Reports, Dashboards, Integration & Functional Support",
+      link: "otbi-report",
     },
   ];
 
@@ -48,13 +68,13 @@ export default function OracleSolutionHub() {
             <h3 className="text-xl font-bold mb-4 text-green-400">
               Oracle Solution Hub
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               {releatedServices.map((service, i) => (
                 <Link
                   to={`#${service.link}`}
                   scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
                   key={i}
-                  className="group flex items-center p-3 rounded-lg hover:bg-gray-700 transition-all cursor-pointer"
+                  className="group flex items-center px-4 p-2 rounded-lg hover:bg-gray-700 transition-all cursor-pointer"
                 >
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all"></span>
                   {service.title}
@@ -88,7 +108,7 @@ export default function OracleSolutionHub() {
         </div>
         {/* ########### FIRST ############### */}
         {/* Title & Content */}
-        <section id="UX" className="space-y-6">
+        <section id="custome-oracle" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             1. Custom Oracle APEX Development
           </h2>
@@ -132,7 +152,7 @@ export default function OracleSolutionHub() {
         </section>
         {/* ###########  SECOND ############### */}
         {/* Title & Content */}
-        <section id="UI" className="space-y-6">
+        <section id="advance-oracle" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             2. Advanced Oracle Forms Development
           </h2>
@@ -177,7 +197,7 @@ export default function OracleSolutionHub() {
         </section>
         {/* ###########  THIRD ############### */}
         {/* Title & Content */}
-        <section id="UI" className="space-y-6">
+        <section id="report-design" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             3. Analytical Report Design & Development
           </h2>
@@ -222,7 +242,7 @@ export default function OracleSolutionHub() {
         </section>
         {/* ###########  FOURTH ############### */}
         {/* Title & Content */}
-        <section id="UI" className="space-y-6">
+        <section id="progressive-web-app" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             4. Progressive Web Apps with Oracle Fusion Integration
           </h2>
@@ -265,7 +285,7 @@ export default function OracleSolutionHub() {
         </section>
         {/* ###########  FIFTH ############### */}
         {/* Title & Content */}
-        <section id="UI" className="space-y-6">
+        <section id="restfull-api" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             5. Oracle Fusion RESTful API/Web Integration Services
           </h2>
@@ -307,7 +327,7 @@ export default function OracleSolutionHub() {
         </section>
         {/* ###########  SIXTH ############### */}
         {/* Title & Content */}
-        <section id="UI" className="space-y-6">
+        <section id="otbi-reportO" className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
             6. Oracle Fusion OTBI Reports, Dashboards, Integration & Functional
             Support
