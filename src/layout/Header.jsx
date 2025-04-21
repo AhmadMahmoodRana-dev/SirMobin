@@ -10,21 +10,20 @@ const Header = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
 
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-  
-    setIsAtTop(scrollY < 10); 
-  
+
+    setIsAtTop(scrollY < 10);
+
     if (!isScrolling) {
       setVisible(false);
       setIsScrolling(true);
     }
-  
+
     clearTimeout(window.scrollTimeout);
     window.scrollTimeout = setTimeout(() => {
       setIsScrolling(false);
@@ -32,7 +31,7 @@ const Header = () => {
     }, 100);
   };
   useEffect(() => {
-    window.addEventListener("scroll"  , handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -43,7 +42,9 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 py-5 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 transition-all duration-300
     ${visible ? "translate-y-0" : "-translate-y-full"}
-    ${isAtTop ? "bg-transparent" : "bg-gray-900 bg-opacity-95 backdrop-blur-md"}`}
+    ${
+      isAtTop ? "bg-transparent" : "bg-gray-900 bg-opacity-95 backdrop-blur-md"
+    }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
@@ -71,14 +72,14 @@ const Header = () => {
                 About us
               </Link>
             </li>
-            <li>
-              <Link
-                to="/services"
-                className="text-white hover:text-green-400 transition-colors"
+            <Link
+              to={`#allservices`}
+              scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+              className="text-white hover:text-green-400 transition-colors"
               >
-                Service
-              </Link>
-            </li>
+              <span className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all"></span>
+              Services
+            </Link>
             <li>
               <Link
                 to="/portfolio"
@@ -149,13 +150,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/services"
-                className="text-white hover:text-green-400 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+            <Link
+              to={`#allservices`}
+              scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+              className="text-white hover:text-green-400 transition-colors"
               >
-                Service
-              </Link>
+              Services
+            </Link>
             </li>
             <li>
               <Link

@@ -67,7 +67,7 @@ const serviceData = [
     title: "Digital Marketing Services",
     description:
       "Driving Growth in the Digital Era",
-    link: "services/customise-app",
+    link: "services/digital-marketting",
   },
 ];
 
@@ -101,7 +101,7 @@ const ServiceCard = ({ service, index }) => {
 
 const Services = () => {
   return (
-    <section className="2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-20 bg-[#1c1c1c] bg-gradient-to-br from-[#1c1c1c] to-[#423814]">
+    <section id="allservices" className="2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-20 bg-[#1c1c1c] bg-gradient-to-br from-[#1c1c1c] to-[#423814]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2

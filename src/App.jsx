@@ -10,6 +10,7 @@ import UxUi from './pages/services/UxUi';
 import OracleSolutionHub from './pages/services/OracleSolutionHub';
 import ApexBuildSupport from './pages/services/ApexBuildSupport';
 import AdvancedInfraSetup from './pages/services/AdvancedInfraSetup';
+import DigitalMarketting from './pages/services/DigitalMarketting';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='services/oracle-solution-hub'  element={<OracleSolutionHub/>} />
           <Route path='services/apex-build-support'  element={<ApexBuildSupport/>} />
           <Route path='services/advanced-infra-setup'  element={<AdvancedInfraSetup/>} />
+          <Route path='services/digital-marketting'  element={<DigitalMarketting/>} />
          
         </Route>
       </Routes>
