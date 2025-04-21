@@ -91,9 +91,10 @@ const ServiceCard = ({ service, index }) => {
       </p>
       <Link
         to={service.link}
-        className="text-white hover:text-green-400 inline-flex items-center font-medium gap-5"
-      >
-        <FaArrowRight /> Learn More
+        className="bg-green-500 flex justify-center gap-3 items-center hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
+        >
+        Learn More
+        <FaArrowRight /> 
       </Link>
     </motion.div>
   );
