@@ -58,7 +58,7 @@ const Header = () => {
           <ul className="flex space-x-8">
             <li>
               <Link
-                to="/"
+                to={`/#hero`}
                 className="text-white hover:text-green-400 transition-colors"
               >
                 Home
@@ -133,7 +133,7 @@ const Header = () => {
           <ul className="flex flex-col items-center space-y-4">
             <li>
               <Link
-                to="/"
+                to={`/#hero`}
                 className="text-white hover:text-green-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
