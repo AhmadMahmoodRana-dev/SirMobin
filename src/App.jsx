@@ -11,6 +11,7 @@ import OracleSolutionHub from './pages/services/OracleSolutionHub';
 import ApexBuildSupport from './pages/services/ApexBuildSupport';
 import AdvancedInfraSetup from './pages/services/AdvancedInfraSetup';
 import DigitalMarketting from './pages/services/DigitalMarketting';
+import ProjectDetail from './pages/ProjectDetail';
 
 // service_cswm5n7
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='services/apex-build-support'  element={<ApexBuildSupport/>} />
           <Route path='services/advanced-infra-setup'  element={<AdvancedInfraSetup/>} />
           <Route path='services/digital-marketting'  element={<DigitalMarketting/>} />
+          <Route path='project/:slug'  element={<ProjectDetail/>} />
          
         </Route>
       </Routes>
