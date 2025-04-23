@@ -12,17 +12,17 @@ const ContactUs = () => {
 
       {/* Contact Info Cards */}
       <div className="grid md:grid-cols-3 gap-6 p-10 bg-[#1c1c1c]">
-        <div className="bg-gray-900 p-6 rounded-lg text-center shadow-md">
+        <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">📍</div>
           <h2 className="text-xl font-semibold">Address</h2>
           <p>7 Green Lake Street<br />Crawfordsville, IN 47933</p>
         </div>
-        <div className="bg-gray-900 p-6 rounded-lg text-center shadow-md">
+        <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">✉️</div>
           <h2 className="text-xl font-semibold">Email Us</h2>
           <p>Elito@gmail.com<br />helloyou@gmail.com</p>
         </div>
-        <div className="bg-gray-900 p-6 rounded-lg text-center shadow-md">
+        <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">📞</div>
           <h2 className="text-xl font-semibold">Call Now</h2>
           <p>+1 800 123 456 789<br />+1 800 123 654 987</p>
@@ -38,12 +38,12 @@ const ContactUs = () => {
           </p>
         </div>
         <form className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-          <input type="text" placeholder="Your Name*" className="p-3 bg-gray-800 rounded text-white w-full" />
-          <input type="email" placeholder="Your Email*" className="p-3 bg-gray-800 rounded text-white w-full" />
-          <input type="text" placeholder="Address" className="p-3 bg-gray-800 rounded text-white w-full" />
-          <input type="text" placeholder="Services" className="p-3 bg-gray-800 rounded text-white w-full" />
-          <textarea placeholder="Message.." rows="5" className="p-3 bg-gray-800 rounded text-white w-full md:col-span-2"></textarea>
-          <button type="submit" className="bg-green-500 hover:bg-green-600 rounded-full px-6 py-2 text-white w-max mx-auto">
+          <input type="text" placeholder="Your Name*" className="p-3 bg-[#191919] rounded text-white w-full" />
+          <input type="email" placeholder="Your Email*" className="p-3 bg-[#191919] rounded text-white w-full" />
+          <input type="text" placeholder="Address" className="p-3 bg-[#191919] rounded text-white w-full" />
+          <input type="text" placeholder="Services" className="p-3 bg-[#191919] rounded text-white w-full" />
+          <textarea placeholder="Message.." rows="5" className="p-3 bg-[#191919] rounded text-white w-full md:col-span-2"></textarea>
+          <button type="submit" className="bg-green-500 hover:bg-green-600 rounded-full px-6 py-2 text-white w-max ">
             Send Message
           </button>
         </form>

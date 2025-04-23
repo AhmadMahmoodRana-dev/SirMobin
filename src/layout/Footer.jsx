@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           <div>
             <Link
-              to="/contact"
+              to="/contactUs"
               className="inline-block bg-white text-red-500 hover:bg-gray-200 px-8 py-3 rounded-full font-medium transition duration-300"
             >
               Send Message
