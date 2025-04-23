@@ -1,14 +1,38 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import background from "../../assets/main-bg.jpg";
 import profile from "../../assets/profile.jpg";
 import photoshop from "../../assets/photoshop.png";
 import sketch from "../../assets/sketch.png";
 import { FaArrowRight } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const skills = [
+    "Customized Apps Development",
+    "Mobile Application Development",
+    "Web Development",
+    "Ux/Ui Design",
+    "Oracle Solution Hub",
+    "APEX Build & Support",
+    "Advanced Infra Setup",
+    "Digital Marketing Services"
+  ];
+  const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
+    }, 3500); // change skill every 2.5s
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section id="hero" className="relative 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 pb-5 flex items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+    <section
+      id="hero"
+      className="relative 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 pb-5 flex items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
@@ -37,12 +61,19 @@ const Hero = () => {
             >
               I am Ronald.
             </motion.h1>
-            <motion.h2
-              className="text-green-500 text-3xl md:text-3xl font-semibold mb-6"
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              UI/UX Designer
-            </motion.h2>
+            <AnimatePresence mode="wait">
+              <motion.h2
+                key={skills[currentSkillIndex]} // helps detect change
+                className="text-green-500 text-3xl md:text-3xl font-semibold mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+              >
+                {skills[currentSkillIndex]}
+              </motion.h2>
+            </AnimatePresence>
+
             <motion.p
               className="text-gray-300 mb-8 max-w-md lg:max-w-lg text-lg "
               transition={{ duration: 0.5, delay: 0.7 }}
