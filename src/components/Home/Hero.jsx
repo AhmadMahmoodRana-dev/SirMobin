@@ -112,7 +112,7 @@ const Hero = () => {
               </div>
 
               {/* Software Icons */}
-              <div className="absolute -top-2 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
+              {/* <div className="absolute -top-2 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
                 <img
                   src={photoshop}
                   alt="Photoshop Icon"
@@ -121,12 +121,12 @@ const Hero = () => {
               </div>
               <div className="absolute bottom-12 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
                 <img src={sketch} alt="Sketch Icon" className="w-12 h-12" />
-              </div>
+              </div> */}
 
               {/* Projects Completed Badge */}
               <div className="absolute bottom-0 left-4 lg:left-20 z-20 bg-white px-4 py-2 rounded-md shadow-md">
                 <div className="flex items-center">
-                  <span className="font-bold text-gray-900">100+</span>
+                  <span className="font-bold text-gray-900">26+</span>
                   <span className="ml-2 text-sm text-gray-600">
                     Complete Projects
                   </span>
