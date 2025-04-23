@@ -1,69 +1,77 @@
 import React from "react";
 import { motion } from "framer-motion";
+import azgard from "../../assets/azgard9.jpg";
+import singer from "../../assets/singerPakistan.jpg";
+import maple from "../../assets/mapleleaf.png";
+import waves from "../../assets/waves.jpg";
 
 const experiences = [
   {
     year: "Dec. 2024 – to Jan.2025",
     title: "Azgard9",
-    company: "Employee Self Service Mobile App",
+    company: ["Employee Self Service Mobile App"],
     link: "#",
-    icon: "🌀",
+    icon: azgard,
   },
   {
     year: "Oct. 2024 – to Apr.2025",
     title: "Azgard9",
-    company: "HRMS & Payroll System",
-    link: "#",
-    icon: "💎",
+    company: ["HRMS & Payroll System"],
+    link: "https://erp.visionplusapps.com:8081/ords/r/api/azgard128111/login?session=9576267188136",
+    icon: azgard,
   },
   {
     year: "July. 2019 – to Jan.2020",
     title: "Singer Pakistan Limited",
-    company: "Fixed Asset System",
+    company: ["Fixed Asset System"],
     link: "#",
-    icon: "🔷",
+    icon: singer,
   },
   {
     year: "Nov. 2018 – to Jun.2019",
-    title: "Product Designer",
-    company: "Myant Inc. Etobicoke, ON (Remote)",
+    title: "WavesPlus",
+    company: ["1. Shifting of EMC-Dealer to Waves Marketing Co on Oracle Customized application","2. Development of In-house portal","3. Development & Implementation of Call Center Application","4. IT Help Desk"],
     link: "#",
-    icon: "🔘",
+    icon: waves,
   },
   {
     year: "Nov. 2017 – Nov.-2018",
     title: "WavesPlus",
-    company: "Hirepurchase / EMI System",
-    link: "#",
-    icon: "🔘",
+    company: ["Hirepurchase / EMI System"],
+    link: "http://central.emc-appliances.com/",
+    icon: waves,
   },
   {
     year: "May. 2017 – Jun.2017",
     title: "Singer Pakistan Limited",
-    company: "First time in the history Singer Pakistan Inventory Barcoding of Finish Goods",
+    company: [
+      "First time in the history Singer Pakistan Inventory Barcoding of Finish Goods",
+    ],
     link: "#",
-    icon: "🔘",
+    icon: singer,
   },
   {
     year: "Jun. 2016 – Feb.2017",
     title: "Singer Pakistan Limited",
-    company: "Customized Oracle based fully integrated ERP System",
+    company: ["Customized Oracle based fully integrated ERP System"],
     link: "#",
-    icon: "🔘",
+    icon: singer,
   },
   {
     year: "Jul. 2015 – Jun. 2016",
     title: "Maple Leaf Cement",
-    company: "Implementation of EBS R12 Financial Module",
+    company: ["Implementation of EBS R12 Financial Module"],
     link: "#",
-    icon: "🔘",
+    icon: maple,
   },
   {
     year: "Jan. 2015 – Jun. 2015",
     title: "Maple Leaf Cement",
-    company: "Housekeeping Tracking System (Click), A Realstate Management System",
+    company: [
+      "Housekeeping Tracking System (Click), A Realstate Management System",
+    ],
     link: "#",
-    icon: "🔘",
+    icon: maple,
   },
 ];
 
@@ -109,14 +117,16 @@ const ExperienceSection = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-4 md:w-2/4 w-full">
-              <div className="text-2xl md:text-3xl">{exp.icon}</div>
+              <img src={exp.icon} className="w-[80px] h-[80px]" alt="" />
               <div>
                 <h3 className="text-lg md:text-xl lg:text-xl font-bold">
                   {exp.title}
                 </h3>
-                <p className="text-red-400 text-sm md:text-base">
-                  {exp.company}
-                </p>
+                {exp.company.map((data) => {
+                  return (
+                    <p className="text-red-400 text-sm md:text-base">{data}</p>
+                  );
+                })}
               </div>
             </div>
 
