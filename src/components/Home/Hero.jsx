@@ -128,8 +128,7 @@ const Hero = () => {
                 <div className="flex items-center">
                   <span className="font-bold text-gray-900">26+</span>
                   <span className="ml-2 text-sm text-gray-600">
-                    Complete Projects
-                  </span>
+Years of Experience                  </span>
                 </div>
               </div>
             </div>
