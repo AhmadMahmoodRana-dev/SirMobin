@@ -3,30 +3,65 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    year: "2015 - 2016",
-    title: "Junior Visual Designer",
-    company: "Trapeza Group, USA",
+    year: "Dec. 2024 – to Jan.2025",
+    title: "Azgard9",
+    company: "Employee Self Service Mobile App",
     link: "#",
     icon: "🌀",
   },
   {
-    year: "2017 - 2018",
-    title: "UI/UX Designer",
-    company: "Gallerie Ontario, Canada (Remote)",
+    year: "Oct. 2024 – to Apr.2025",
+    title: "Azgard9",
+    company: "HRMS & Payroll System",
     link: "#",
     icon: "💎",
   },
   {
-    year: "2019 - 2020",
-    title: "Senior UI/UX Designer",
-    company: "Morson Hybrid, Canada",
+    year: "July. 2019 – to Jan.2020",
+    title: "Singer Pakistan Limited",
+    company: "Fixed Asset System",
     link: "#",
     icon: "🔷",
   },
   {
-    year: "2021 - 2022",
+    year: "Nov. 2018 – to Jun.2019",
     title: "Product Designer",
     company: "Myant Inc. Etobicoke, ON (Remote)",
+    link: "#",
+    icon: "🔘",
+  },
+  {
+    year: "Nov. 2017 – Nov.-2018",
+    title: "WavesPlus",
+    company: "Hirepurchase / EMI System",
+    link: "#",
+    icon: "🔘",
+  },
+  {
+    year: "May. 2017 – Jun.2017",
+    title: "Singer Pakistan Limited",
+    company: "First time in the history Singer Pakistan Inventory Barcoding of Finish Goods",
+    link: "#",
+    icon: "🔘",
+  },
+  {
+    year: "Jun. 2016 – Feb.2017",
+    title: "Singer Pakistan Limited",
+    company: "Customized Oracle based fully integrated ERP System",
+    link: "#",
+    icon: "🔘",
+  },
+  {
+    year: "Jul. 2015 – Jun. 2016",
+    title: "Maple Leaf Cement",
+    company: "Implementation of EBS R12 Financial Module",
+    link: "#",
+    icon: "🔘",
+  },
+  {
+    year: "Jan. 2015 – Jun. 2015",
+    title: "Maple Leaf Cement",
+    company: "Housekeeping Tracking System (Click), A Realstate Management System",
     link: "#",
     icon: "🔘",
   },
@@ -43,7 +78,7 @@ const ExperienceSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          My Work Experience
+          Experience That Delivers
         </motion.h2>
 
         <motion.p
@@ -53,8 +88,9 @@ const ExperienceSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Must explain to you how all this mistaken idea of denouncing pleasure
-          born and give you a complete account the system
+          My journey spans hands-on experience with
+          Oracle-Forms,Reports,APEX,.NET and more.I specialize in building
+          scalable,real-world solutions for growing businesses.
         </motion.p>
       </div>
 

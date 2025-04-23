@@ -73,7 +73,7 @@ const Header = () => {
               </Link>
             </li>
             <Link
-              to={`#allservices`}
+              to={`/#allservices`}
               scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
               className="text-white hover:text-green-400 transition-colors"
               >
@@ -151,7 +151,7 @@ const Header = () => {
             </li>
             <li>
             <Link
-              to={`#allservices`}
+              to={`/#allservices`}
               scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
               className="text-white hover:text-green-400 transition-colors"
               >

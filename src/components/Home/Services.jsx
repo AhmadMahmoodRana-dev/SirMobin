@@ -5,68 +5,60 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-
 import { MdIntegrationInstructions } from "react-icons/md";
-import { BiSolidReport } from "react-icons/bi";
-import { RiUserSettingsFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { SiApachenetbeanside, SiMarketo, SiOracle } from "react-icons/si";
+import { RiBuilding2Fill } from "react-icons/ri";
 
 const serviceData = [
   {
     icon: <FaLaptopCode className="text-yellow-400 text-3xl" />,
     title: "Customized Apps Development",
-    description:
-      "Tailored Solutions for Your Business Needs",
+    description: "Tailored Solutions for Your Business Needs",
     link: "services/customise-app",
   },
   {
     icon: <MdIntegrationInstructions className="text-yellow-400 text-3xl" />,
     title: "Mobile Application Development",
-    description:
-      "Custom Solutions for a Connected World",
+    description: "Custom Solutions for a Connected World",
     link: "services/mobile-app",
   },
   {
     icon: <FaBullhorn className="text-yellow-400 text-3xl" />,
     title: "Web Development",
-    description:
-      "Creating Dynamic and Scalable Digital Solutions",
+    description: "Creating Dynamic and Scalable Digital Solutions",
     link: "services/web-development",
   },
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
     title: "Ux/Ui Design",
-    description:
-      "Crafting Engaging and Intuitive Digital Experiences",
+    description: "Crafting Engaging and Intuitive Digital Experiences",
     link: "services/ux-ui",
   },
   {
-    icon: <BiSolidReport className="text-yellow-400 text-3xl" />,
+    icon: <SiOracle className="text-yellow-400 text-3xl" />,
     title: "Oracle Solution Hub",
-    description:
-      "Tailored Oracle Services for Your Business",
+    description: "Tailored Oracle Services for Your Business",
     link: "services/oracle-solution-hub",
   },
   {
-    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    icon: <SiApachenetbeanside className="text-yellow-400 text-3xl" />,
     title: "APEX Build & Support",
     description:
       "Extensive Oracle APEX Development and Maintenance Services",
     link: "services/apex-build-support",
   },
   {
-    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    icon: <RiBuilding2Fill className="text-yellow-400 text-3xl" />,
     title: "Advanced Infra Setup",
     description:
       "Exclusive Services for Provincial & National Organizations",
     link: "services/advanced-infra-setup",
   },
   {
-    icon: <RiUserSettingsFill className="text-yellow-400 text-3xl" />,
+    icon: <SiMarketo className="text-yellow-400 text-3xl" />,
     title: "Digital Marketing Services",
-    description:
-      "Driving Growth in the Digital Era",
+    description: "Driving Growth in the Digital Era",
     link: "services/digital-marketting",
   },
 ];
@@ -112,7 +104,7 @@ const Services = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Popular Services
+           Most Requested Services
           </motion.h2>
 
           <motion.p
@@ -122,8 +114,7 @@ const Services = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Must explain to you how all this mistaken idea of denouncing
-            pleasure born and give you a complete account the system
+            These are the services I'm most known for highly requested and client-approved.Built to solve real problems with smart, tailored solutions.
           </motion.p>
         </div>
 
