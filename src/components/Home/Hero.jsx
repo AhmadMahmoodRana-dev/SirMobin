@@ -57,7 +57,7 @@ const Hero = () => {
               className="text-white text-5xl md:text-8xl font-bold mb-4"
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              I am Ronald.
+              I am Mobin.
             </motion.h1>
             <AnimatePresence mode="wait">
               <motion.h2

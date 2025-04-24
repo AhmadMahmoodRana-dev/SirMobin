@@ -1,31 +1,35 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FaFacebookF,FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaGithub,
+} from "react-icons/fa";
 import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   const Icons = [
     {
-      icon:FaFacebookF,
-      link:"https://www.facebook.com/share/1ANS3NPnoH/"
+      icon: FaFacebookF,
+      link: "https://www.facebook.com/share/1ANS3NPnoH/",
     },
     {
-      icon:FaInstagram,
-      link:"https://www.instagram.com/syed.mobinahmad?igsh=c25jNGR6OWxwNGdh"
+      icon: FaInstagram,
+      link: "https://www.instagram.com/syed.mobinahmad?igsh=c25jNGR6OWxwNGdh",
     },
     {
-      icon:FaLinkedinIn,
-      link:"https://www.linkedin.com/in/mobin-ahmad-36944111/"
+      icon: FaLinkedinIn,
+      link: "https://www.linkedin.com/in/mobin-ahmad-36944111/",
     },
     {
-      icon:FaGithub,
-      link:"https://github.com/mobin-ahmad"
+      icon: FaGithub,
+      link: "https://github.com/mobin-ahmad",
     },
-  ]
+  ];
   return (
     <footer className="bg-[#1c1c1c] bg-gradient-to-br 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 text-white pt-20 pb-8">
       <div className="container mx-auto px-4">
-
         {/* CTA Section */}
         <motion.div
           className="bg-red-500 p-10 rounded-lg mb-16 flex flex-col md:flex-row justify-between items-center"
@@ -57,15 +61,20 @@ const Footer = () => {
           transition={{ delay: 0.3, duration: 0.7 }}
           viewport={{ once: true }}
         >
-
           {/* Logo and About */}
-          <div className='lg:border-r'>
-            <Link to="/" className="flex items-center mb-6">
-            <img src={logo} alt="Elito Logo" className="h-12 rounded-full w-12" />
+          <div className="lg:border-r">
+            <Link to="/" className="flex items-center">
+              <img
+                src={logo}
+                alt="Elito Logo"
+                className="h-12 rounded-full w-12"
+              />
+              <h1 className="px-4 text-white">Mobin Ahmad</h1>
             </Link>
             <p className="text-gray-400 mb-6">
-Smart systems. Real impact . Let's build what your business really needs.            
-</p>
+              Smart systems. Real impact . Let's build what your business really
+              needs.
+            </p>
             <div className="flex space-x-4">
               {Icons.map((Icon, index) => (
                 <motion.a
@@ -74,7 +83,7 @@ Smart systems. Real impact . Let's build what your business really needs.
                   className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-opacity-80 transition duration-300"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <Icon.icon/>
+                  <Icon.icon />
                 </motion.a>
               ))}
             </div>
@@ -84,10 +93,38 @@ Smart systems. Real impact . Let's build what your business really needs.
           <div>
             <h4 className="text-xl font-bold mb-6">Navigation</h4>
             <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition duration-300">About us</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition duration-300">Contact us</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Video Guide</Link></li>
-              <li><Link to="/blog" className="text-gray-400 hover:text-white transition duration-300">Recent Post</Link></li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Contact us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Video Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Recent Post
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -95,14 +132,70 @@ Smart systems. Real impact . Let's build what your business really needs.
           <div>
             <h4 className="text-xl font-bold mb-6">All Services</h4>
             <ul className="space-y-3">
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Oracle Solution Hub</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">APEX Build & Support</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Advanced Infra Setup</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Digital Marketing Services</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Customized Apps Development</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Mobile Application Development</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Web Development</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition duration-300">Ux/Ui Design</Link></li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Oracle Solution Hub
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  APEX Build & Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Advanced Infra Setup
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Digital Marketing Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Customized Apps Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Mobile Application Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Ux/Ui Design
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -110,10 +203,38 @@ Smart systems. Real impact . Let's build what your business really needs.
           <div>
             <h4 className="text-xl font-bold mb-6">Useful Link</h4>
             <ul className="space-y-3">
-              <li><Link to="/#hero" className="text-gray-400 hover:text-white transition duration-300">Home Page</Link></li>
-              <li><Link to="/portfolio" className="text-gray-400 hover:text-white transition duration-300">Portfolio</Link></li>
-              <li><Link to="/#allservices" className="text-gray-400 hover:text-white transition duration-300">Services</Link></li>
-              <li><Link to="/contactUs" className="text-gray-400 hover:text-white transition duration-300">Contact Us</Link></li>
+              <li>
+                <Link
+                  to="/#hero"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Home Page
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#allservices"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contactUs"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </motion.div>
@@ -126,7 +247,9 @@ Smart systems. Real impact . Let's build what your business really needs.
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400">Copyright © {new Date().getFullYear()} Elito. All rights reserved.</p>
+          <p className="text-gray-400">
+            Copyright © {new Date().getFullYear()} Elito. All rights reserved.
+          </p>
         </motion.div>
       </div>
     </footer>

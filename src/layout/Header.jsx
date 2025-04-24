@@ -50,7 +50,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Elito Logo" className="h-12 rounded-full w-12" />
-            <h1>Name</h1>
+            <h1 className="px-4 text-white">Mobin Ahmad</h1>
           </Link>
         </div>
 
