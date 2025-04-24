@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
@@ -49,7 +49,8 @@ const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Elito Logo" className="h-14 w-40" />
+            <img src={logo} alt="Elito Logo" className="h-12 rounded-full w-12" />
+            <h1>Name</h1>
           </Link>
         </div>
 

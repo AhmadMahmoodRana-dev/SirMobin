@@ -10,9 +10,9 @@ const ProjectDetails = () => {
 
   return (
     <div className="bg-[#1c1c1c] min-h-screen p-6 text-white">
-      <div className="flex flex-col items-center gap-6 justify-center mt-22">
+      <div className="flex flex-col items-center gap-10 justify-center mt-22">
         {project.images.map((img, i) => (
-          <img key={i} src={img} alt={`Slide ${i + 1}`} className="w-[90%] h-[100%] object-cover rounded-lg" />
+          <img key={i} src={img} alt={`Slide ${i + 1}`} className="w-[60%] h-[60%] object-cover rounded-lg" />
         ))}
       </div>
     </div>

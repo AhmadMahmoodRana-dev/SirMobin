@@ -32,7 +32,7 @@ const AdvantageSection = () => {
     { label: "Oracle Apex", value: 90, color: "text-red-400 border-red-600" },
     {
       label: "Bussiness Technologies",
-      value: 95,
+      value: 96,
       color: "text-orange-400 border-orange-500",
     },
     { label: "Database Technologies", value: 92, color: "text-blue-400 border-blue-500" },

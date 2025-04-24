@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import background from "../../assets/main-bg.jpg";
-import profile from "../../assets/profile.jpg";
-import photoshop from "../../assets/photoshop.png";
-import sketch from "../../assets/sketch.png";
+import profile from "../../assets/logo.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
