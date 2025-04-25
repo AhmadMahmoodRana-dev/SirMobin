@@ -88,7 +88,7 @@ const ExperienceSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          My journey spans hands-on experience with Oracle Forms, Reports, APEX, .NET and more. I specialize in building scalable, real-world solutions for growing businesses.
+" My journey includes hands-on experience with Oracle Forms, Reports, APEX, .NET, and more. I specialize in crafting scalable, real-world solutions that drive business growth. "
         </motion.p>
       </div>
 

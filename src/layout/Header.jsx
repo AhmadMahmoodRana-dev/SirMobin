@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.jpg";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,18 +106,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
         {/* Contact Button */}
-        <div className="hidden md:block">
-          <Link
-            to="/contactUs"
-            className="bg-green-500 flex justify-center items-center gap-3 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
-          >
-            Contact
-            <FaArrowRightLong />
-          </Link>
-        </div>
-
+        <div className="hidden md:block"></div>
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white focus:outline-none"

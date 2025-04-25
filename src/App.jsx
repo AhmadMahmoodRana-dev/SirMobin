@@ -12,6 +12,7 @@ import ApexBuildSupport from './pages/services/ApexBuildSupport';
 import AdvancedInfraSetup from './pages/services/AdvancedInfraSetup';
 import DigitalMarketting from './pages/services/DigitalMarketting';
 import ProjectDetail from './pages/ProjectDetail';
+import About from './pages/About';
 
 // service_cswm5n7
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path='project/:slug'  element={<ProjectDetail/>} />
          
         </Route>
+        <Route path='/about' element={<About/>} />
       </Routes>
     </>
       

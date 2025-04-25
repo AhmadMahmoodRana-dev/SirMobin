@@ -27,6 +27,49 @@ const Footer = () => {
       link: "https://github.com/mobin-ahmad",
     },
   ];
+  const serviceData = [
+    {
+      title: "Customized Apps Development",
+      description: "Tailored Solutions for Your Business Needs",
+      link: "services/customise-app",
+    },
+    {
+      title: "Mobile Application Development",
+      description: "Custom Solutions for a Connected World",
+      link: "services/mobile-app",
+    },
+    {
+      title: "Web Development",
+      description: "Creating Dynamic and Scalable Digital Solutions",
+      link: "services/web-development",
+    },
+    {
+      title: "UX/UI Design",
+      description: "Crafting Engaging and Intuitive Digital Experiences",
+      link: "services/ux-ui",
+    },
+    {
+      title: "Oracle Solution Hub",
+      description: "Tailored Oracle Services for Your Business",
+      link: "services/oracle-solution-hub",
+    },
+    {
+      title: "APEX Build & Support",
+      description: "Extensive Oracle APEX Development and Maintenance Services",
+      link: "services/apex-build-support",
+    },
+    {
+      title: "Advanced Infra Setup",
+      description: "Exclusive Services for Provincial & National Organizations",
+      link: "services/advanced-infra-setup",
+    },
+    {
+      title: "Digital Marketing Services",
+      description: "Driving Growth in the Digital Era",
+      link: "services/digital-marketting",
+    },
+  ];
+
   return (
     <footer className="bg-[#1c1c1c] bg-gradient-to-br 2xl:pl-20 xl:pl-6 lg:pl-4 md:pl-4 pl-4 text-white pt-20 pb-8">
       <div className="container mx-auto px-4">
@@ -132,70 +175,18 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6">All Services</h4>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Oracle Solution Hub
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  APEX Build & Support
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Advanced Infra Setup
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Digital Marketing Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Customized Apps Development
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Mobile Application Development
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Ux/Ui Design
-                </Link>
-              </li>
+              {serviceData.map((data) => {
+                return (
+                  <li>
+                    <Link
+                      to={`${data.link}`}
+                      className="text-gray-400 hover:text-white transition duration-300"
+                    >
+                      {data?.title}{" "}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 

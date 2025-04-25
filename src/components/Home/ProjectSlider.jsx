@@ -1,11 +1,10 @@
 // components/ProjectSlider.jsx
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef,useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import { SiExpertsexchange } from "react-icons/si";
 import projects from "../../Project";
 import { Link } from "react-router-dom";
 
@@ -31,11 +30,11 @@ const ProjectSlider = () => {
         </div>
 
         {/* Icon/Image */}
-        <div className="mt-10 md:mt-0 md:ml-10">
+        {/* <div className="mt-10 md:mt-0 md:ml-10">
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#2b2b2b] flex items-center justify-center">
             <SiExpertsexchange className="w-16 h-16 md:w-20 md:h-20 object-contain text-amber-400" />
           </div>
-        </div>
+        </div> */}
       </section>
       <div className="w-full mx-auto">
         <Swiper
@@ -67,8 +66,8 @@ const ProjectSlider = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[50vh] object-cover"
-                />
+                  className="w-full h-auto object-cover"
+                  />
                 <div className="md:p-6 p-3 md:text-left text-center">
                   <h2 className="text-2xl font-bold text-white mb-2">
                     {project.title}

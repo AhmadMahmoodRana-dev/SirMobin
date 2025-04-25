@@ -31,7 +31,7 @@ const serviceData = [
   },
   {
     icon: <FaPaintBrush className="text-yellow-400 text-3xl" />,
-    title: "Ux/Ui Design",
+    title: "UX/UI Design",
     description: "Crafting Engaging and Intuitive Digital Experiences",
     link: "services/ux-ui",
   },

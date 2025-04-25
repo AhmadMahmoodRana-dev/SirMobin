@@ -32,13 +32,14 @@ const AdvantageSection = () => {
     { label: "Oracle Apex", value: 90, color: "text-red-400 border-red-600" },
     {
       label: "Bussiness Technologies",
-      value: 96,
+      value: 95,
       color: "text-orange-400 border-orange-500",
     },
     { label: "Database Technologies", value: 92, color: "text-blue-400 border-blue-500" },
     { label: "Integration", value: 75, color: "text-yellow-400 border-purple-500" },
     { label: "Design Architecture", value: 90, color: "text-yellow-400 border-pink-600" },
     { label: "Front-End Technologies", value: 50, color: "text-blue-400 border-blue-500" },
+    { label: "Web Development", value: 96, color: "text-orange-400 border-orange-500" },
   ];
 
   // Number counting animation hook
@@ -84,7 +85,7 @@ const AdvantageSection = () => {
               transition={{ delay: 0.2 }}
               className="text-6xl xs:text-7xl md:text-9xl font-bold text-yellow-400"
             >
-              26
+              26 +
             </motion.h1>
             <p className="text-lg md:text-xl mt-2">Years of Experience</p>
             <motion.div
