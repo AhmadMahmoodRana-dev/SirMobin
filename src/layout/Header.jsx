@@ -69,7 +69,7 @@ const Header = () => {
                 to="/about"
                 className="text-white hover:text-green-400 transition-colors"
               >
-                About us
+                About me
               </Link>
             </li>
             <Link
