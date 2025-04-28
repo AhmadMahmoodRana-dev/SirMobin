@@ -25,21 +25,50 @@ const AdvantageSection = () => {
     }),
   };
 
+  
   // Skill data
   const skills = [
-    { label: "Oracle App", value: 98, color: "text-yellow-400 border-pink-600" },
-    { label: "Process Mapping", value: 85, color: "text-green-400 border-green-600" },
+    {
+      label: "Oracle App",
+      value: 98,
+      color: "text-yellow-400 border-pink-600",
+    },
+    {
+      label: "Process Mapping",
+      value: 85,
+      color: "text-green-400 border-green-600",
+    },
     { label: "Oracle Apex", value: 90, color: "text-red-400 border-red-600" },
     {
       label: "Bussiness Technologies",
       value: 95,
       color: "text-orange-400 border-orange-500",
     },
-    { label: "Database Technologies", value: 92, color: "text-blue-400 border-blue-500" },
-    { label: "Integration", value: 75, color: "text-yellow-400 border-purple-500" },
-    { label: "Design Architecture", value: 90, color: "text-yellow-400 border-pink-600" },
-    { label: "Front-End Technologies", value: 50, color: "text-blue-400 border-blue-500" },
-    { label: "Web Development", value: 96, color: "text-orange-400 border-orange-500" },
+    {
+      label: "Database Technologies",
+      value: 92,
+      color: "text-blue-400 border-blue-500",
+    },
+    {
+      label: "Integration",
+      value: 75,
+      color: "text-yellow-400 border-purple-500",
+    },
+    {
+      label: "Design Architecture",
+      value: 90,
+      color: "text-yellow-400 border-pink-600",
+    },
+    {
+      label: "Front-End Technologies",
+      value: 50,
+      color: "text-blue-400 border-blue-500",
+    },
+    {
+      label: "Web Development",
+      value: 96,
+      color: "text-orange-400 border-orange-500",
+    },
   ];
 
   // Number counting animation hook
@@ -63,9 +92,10 @@ const AdvantageSection = () => {
 
       return () => clearInterval(interval);
     }, [trigger, target]);
-
+    
     return count;
   };
+  const experienceCount = useCountUp(26, experienceInView);
 
   return (
     <div className="bg-[#1c1c1c] bg-gradient-to-br from-[#292717] to-[#1c1c1c] text-white py-12 md:py-20 sm:px-6 xl:px-20 lg:px-10 md:px-6 pl-8 pr-6">
@@ -85,7 +115,7 @@ const AdvantageSection = () => {
               transition={{ delay: 0.2 }}
               className="text-6xl xs:text-7xl md:text-9xl font-bold text-yellow-400"
             >
-              26 +
+              {experienceCount}+
             </motion.h1>
             <p className="text-lg md:text-xl mt-2">Years of Experience</p>
             <motion.div

@@ -44,19 +44,19 @@ const ContactUs = () => {
         <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">📍</div>
           <h2 className="text-xl font-semibold">Address</h2>
-          <p>7 Green Lake Street<br />Crawfordsville, IN 47933</p>
+          <p>66B, Block F3,Sector A Engineers Town,<br />Defence Road,Lahore,Pakistan</p>
         </div>
         {/* Email */}
         <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">✉️</div>
           <h2 className="text-xl font-semibold">Email Us</h2>
-          <p>Elito@gmail.com<br />helloyou@gmail.com</p>
+          <p>mobin@zoisol.com<br />mobin01@gmail.com</p>
         </div>
         {/* Call */}
         <div className="bg-[#191919] p-7 rounded-lg text-center shadow-md">
           <div className="text-yellow-400 text-3xl mb-2">📞</div>
           <h2 className="text-xl font-semibold">Call Now</h2>
-          <p>+1 800 123 456 789<br />+1 800 123 654 987</p>
+          <p>+92 333 4249950</p>
         </div>
       </div>
 
@@ -80,16 +80,7 @@ const ContactUs = () => {
         </form>
       </div>
 
-      {/* Google Map Section */}
-      <div className="w-full h-[400px]">
-        <iframe
-          className="w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18..."
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    
       <ToastContainer />
 
       <Footer />

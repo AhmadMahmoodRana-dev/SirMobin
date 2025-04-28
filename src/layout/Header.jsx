@@ -82,7 +82,7 @@ const Header = () => {
             </Link>
             <li>
               <Link
-                to="/portfolio"
+                to="/#portfolio"
                 className="text-white hover:text-green-400 transition-colors"
               >
                 Portfolio

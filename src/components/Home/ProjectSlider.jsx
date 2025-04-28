@@ -16,7 +16,7 @@ const ProjectSlider = () => {
   const [swiperReady, setSwiperReady] = useState(false);
 
   return (
-    <div className="bg-[#1c1c1c] 2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-12 md:py-20 relative">
+    <div id="portfolio" className="bg-[#1c1c1c] 2xl:px-20 xl:px-6 lg:px-4 md:px-4 px-4 py-12 md:py-20 relative">
       <section className="w-full bg-[#1c1c1c] pb-16  flex flex-col md:flex-row justify-between items-center relative overflow-hidden">
         {/* Text Content */}
         <div className="max-w-xl md:text-left text-center">
