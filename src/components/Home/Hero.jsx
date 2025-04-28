@@ -82,7 +82,7 @@ const Hero = () => {
             </motion.p>
             <motion.div transition={{ duration: 0.5, delay: 0.9 }}>
               <Link
-                to="/contact"
+                to="/contactUs"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition duration-300"
               >
                 Hire Me <FaArrowRight className="inline-block ml-2" />
