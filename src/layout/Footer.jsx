@@ -146,7 +146,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/contactUs"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
                   Contact us

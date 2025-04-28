@@ -13,12 +13,14 @@ import AdvancedInfraSetup from './pages/services/AdvancedInfraSetup';
 import DigitalMarketting from './pages/services/DigitalMarketting';
 import ProjectDetail from './pages/ProjectDetail';
 import About from './pages/About';
+import ScrollToTop from './components/Home/ScrollToTop';
 
 // service_cswm5n7
 function App() {
   return (
     <>
 <ScrollToHash/>
+<ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
