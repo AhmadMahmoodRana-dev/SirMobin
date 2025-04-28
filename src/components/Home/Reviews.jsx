@@ -88,7 +88,7 @@ const Reviews = () => {
                       <img
                         src={testimonials[current].image}
                         alt={testimonials[current].name}
-                        className="w-full h-full object-cover object-center" // Ensures the image is centered and covers the area
+                        className="w-full h-full object-cover object-top" // Ensures the image is centered and covers the area
                       />
                     </div>
                   </div>

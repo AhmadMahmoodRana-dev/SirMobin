@@ -204,7 +204,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/portfolio"
+                  to="/#portfolio"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
                   Portfolio
@@ -216,14 +216,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
                   Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contactUs"
-                  className="text-gray-400 hover:text-white transition duration-300"
-                >
-                  Contact Us
                 </Link>
               </li>
             </ul>
