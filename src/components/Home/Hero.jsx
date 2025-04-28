@@ -1,11 +1,44 @@
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer"; // <-- Correct
 import background from "../../assets/main-bg.jpg";
 import profile from "../../assets/logo.jpg";
 import { FaArrowRight } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { IoShieldHalfOutline } from "react-icons/io5";
+
+const useCountUp = (target, trigger) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!trigger) return;
+
+    let start = 0;
+    const duration = 1000; // milliseconds
+    const stepTime = Math.max(Math.floor(duration / target), 15);
+    const interval = setInterval(() => {
+      start += 1;
+      setCount((prev) => {
+        if (prev < target) return start;
+        clearInterval(interval);
+        return target;
+      });
+    }, stepTime);
+
+    return () => clearInterval(interval);
+  }, [trigger, target]);
+
+  return count;
+};
 
 const Hero = () => {
+  const { ref: experienceRef, inView: experienceInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const experienceCount = useCountUp(135, experienceInView);
+
   const skills = [
     "Customized Apps Development",
     "Mobile Application Development",
@@ -14,14 +47,14 @@ const Hero = () => {
     "Oracle Solution Hub",
     "APEX Build & Support",
     "Advanced Infra Setup",
-    "Digital Marketing Services"
+    "Digital Marketing Services",
   ];
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
-    }, 3500); // change skill every 2.5s
+    }, 3500);
 
     return () => clearInterval(interval);
   }, []);
@@ -40,7 +73,8 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 pt-24">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* Left Content - Animates from Bottom */}
+          
+          {/* Left Content */}
           <motion.div
             className="w-full md:w-1/2 mb-8 md:mb-0 sm:text-left text-center"
             initial={{ opacity: 0, y: 50 }}
@@ -61,7 +95,7 @@ const Hero = () => {
             </motion.h1>
             <AnimatePresence mode="wait">
               <motion.h2
-                key={skills[currentSkillIndex]} // helps detect change
+                key={skills[currentSkillIndex]}
                 className="text-green-500 text-3xl md:text-3xl font-semibold mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -73,13 +107,14 @@ const Hero = () => {
             </AnimatePresence>
 
             <motion.p
-              className="text-gray-300 mb-8 max-w-md lg:max-w-lg text-lg "
+              className="text-gray-300 mb-8 max-w-md lg:max-w-lg text-lg"
               transition={{ duration: 0.5, delay: 0.7 }}
             >
               I help bridge the gap between business goals and technology by
               challenging outdated beliefs and delivering effective
-              digital solutions
+              digital solutions.
             </motion.p>
+
             <motion.div transition={{ duration: 0.5, delay: 0.9 }}>
               <Link
                 to="/contactUs"
@@ -90,7 +125,7 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Animates from Right */}
+          {/* Right Content */}
           <motion.div
             className="w-full md:w-1/2 relative"
             initial={{ opacity: 0, x: 100 }}
@@ -103,34 +138,33 @@ const Hero = () => {
                 <div className="rounded-full bg-blue-400 overflow-hidden h-64 w-64 lg:h-[80%] lg:w-[80%] relative">
                   <img
                     src={profile}
-                    alt="Ronald Profile"
+                    alt="Mobin Profile"
                     className="h-full w-full object-cover"
                   />
                 </div>
               </div>
 
-              {/* Software Icons */}
-              {/* <div className="absolute -top-2 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
-                <img
-                  src={photoshop}
-                  alt="Photoshop Icon"
-                  className="w-12 h-12"
-                />
-              </div>
-              <div className="absolute bottom-12 right-1 lg:right-22 z-20 bg-white p-2 rounded-md shadow-md">
-                <img src={sketch} alt="Sketch Icon" className="w-12 h-12" />
-              </div> */}
-
               {/* Projects Completed Badge */}
-              <div className="absolute bottom-0 left-4 lg:left-20 z-20 bg-white px-4 py-2 rounded-md shadow-md">
-                <div className="flex items-center">
-                  <span className="font-bold text-gray-900">26+</span>
-                  <span className="ml-2 text-sm text-gray-600">
-Years of Experience                  </span>
+              <div
+                ref={experienceRef}
+                className="absolute bottom-0 left-4 lg:left-20 z-20 bg-white px-4 py-2 rounded-md shadow-md"
+              >
+                <div className="flex items-center gap-4">
+                  <IoShieldHalfOutline size={30} color="#00a63e" />
+                  <div className="flex flex-col">
+                    <span className="font-bold text-gray-900">
+                      {experienceCount}+
+                    </span>
+                    <span className="ml-2 text-sm text-gray-600">
+                      Completed Projects
+                    </span>
+                  </div>
                 </div>
               </div>
+
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
