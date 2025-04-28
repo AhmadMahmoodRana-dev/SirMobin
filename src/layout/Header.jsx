@@ -90,14 +90,6 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/blog"
-                className="text-white hover:text-green-400 transition-colors"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/contactUs"
                 className="text-white hover:text-green-400 transition-colors"
               >
@@ -157,15 +149,7 @@ const Header = () => {
                 Portfolio
               </Link>
             </li>
-            <li>
-              <Link
-                to="/blog"
-                className="text-white hover:text-green-400 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-            </li>
+            
             <li>
               <Link
                 to="/contactUs"

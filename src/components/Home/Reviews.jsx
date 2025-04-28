@@ -1,29 +1,35 @@
-import { useState, useEffect } from 'react';
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import mark from "../../assets/mark.JPG";
+import dev from "../../assets/dev.jpg";
 
 const testimonials = [
   {
     id: 1,
-    name: 'Aliza Anne',
-    role: 'Fashion Designer',
-    quote: 'Many desktop publishing packages and editors now use as their. It has survived not only five centuries but also the leap into the electronic typesetting.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop'
+    name: "Aliza Anne",
+    role: "ERP User",
+    quote:
+      "The ERP system has withstood evolving business needs, offering stability, flexibility and efficiency,It's a dependable backbone for both daily operations and long-term growth.",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop",
   },
   {
     id: 2,
-    name: 'David Miller',
-    role: 'Web Developer',
-    quote: 'As a developer, I am impressed with the clean code and intuitive design. This platform has transformed my work and boosted productivity significantly.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop'
+    name: "Wasim Butt",
+    role: "Web Developer",
+    quote:
+      "As a developer, I am impressed with the clean code and intuitive design. This platform has transformed my work and boosted productivity significantly.",
+    image:dev,
   },
   {
     id: 3,
-    name: 'Sarah Johnson',
-    role: 'Marketing Director',
-    quote: 'The attention to detail and creativity has helped our brand stand out in a crowded market. I highly recommend their services to anyone looking to make an impact.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop'
-  }
+    name: "Mohiuddin Khan ",
+    role: "Marketing Director",
+    quote:
+      "The attention to detail and creativity has helped our brand stand out in a crowded market. I highly recommend their services to anyone looking to make an impact.",
+    image: mark,
+  },
 ];
 
 const Reviews = () => {
@@ -39,11 +45,15 @@ const Reviews = () => {
   }, []);
 
   const prev = () => {
-    setCurrent((current) => (current === 0 ? testimonials.length - 1 : current - 1));
+    setCurrent((current) =>
+      current === 0 ? testimonials.length - 1 : current - 1
+    );
   };
 
   const next = () => {
-    setCurrent((current) => (current === testimonials.length - 1 ? 0 : current + 1));
+    setCurrent((current) =>
+      current === testimonials.length - 1 ? 0 : current + 1
+    );
   };
 
   return (
@@ -78,7 +88,7 @@ const Reviews = () => {
                       <img
                         src={testimonials[current].image}
                         alt={testimonials[current].name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center" // Ensures the image is centered and covers the area
                       />
                     </div>
                   </div>
